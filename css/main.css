@@ -1,0 +1,492 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf2;
+    color: #241510;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1300px;
+    height: 90px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logo span {
+    color: #e5ad35;
+    margin-left: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #e5ad35;
+}
+
+.order-btn {
+    padding: 13px 24px;
+
+    background: #e5ad35;
+    color: #241510;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    /*
+       HERO FOOD PHOTO
+       Replace this URL with your own Khmer food photo.
+    */
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(25, 8, 3, 0.95),
+            rgba(25, 8, 3, 0.65),
+            rgba(25, 8, 3, 0.20)
+        ),
+        url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    color: white;
+}
+
+.small-title {
+    color: #e5ad35;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    max-width: 700px;
+
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 0.9;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    display: block;
+    color: #e5ad35;
+}
+
+.hero-text {
+    max-width: 520px;
+
+    color: #ddd;
+    line-height: 1.7;
+
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 16px 28px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary {
+    background: #e5ad35;
+    color: #241510;
+}
+
+.primary:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.secondary {
+    color: white;
+    border: 1px solid white;
+}
+
+.secondary:hover {
+    background: white;
+    color: #241510;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    padding: 110px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    color: #a52b20;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: clamp(35px, 5vw, 60px);
+    font-weight: 900;
+}
+
+.food-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.food-card {
+    background: white;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* FOOD PHOTOS */
+
+.food-image {
+    height: 280px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Each card has a different food photo */
+
+.food-one .food-image {
+    background-image:
+        url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=85");
+}
+
+.food-two .food-image {
+    background-image:
+        url("https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1000&q=85");
+}
+
+.food-three .food-image {
+    background-image:
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85");
+}
+
+.food-four .food-image {
+    background-image:
+        url("https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=1000&q=85");
+}
+
+
+/* FOOD INFORMATION */
+
+.food-info {
+    padding: 30px;
+}
+
+.category {
+    color: #a52b20;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.food-info h3 {
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.food-info p {
+    color: #777;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.food-bottom {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.food-bottom strong {
+    color: #a52b20;
+    font-size: 24px;
+}
+
+.food-bottom button {
+    border: none;
+
+    padding: 11px 20px;
+
+    background: #241510;
+    color: white;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.food-bottom button:hover {
+    background: #e5ad35;
+    color: #241510;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 10%;
+
+    background:
+        linear-gradient(
+            rgba(35, 10, 5, 0.90),
+            rgba(35, 10, 5, 0.90)
+        ),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-content > p:first-child {
+    color: #e5ad35;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.about h2 {
+    font-size: clamp(40px, 6vw, 75px);
+    line-height: 0.95;
+    margin: 20px 0 30px;
+}
+
+.about h2 span {
+    color: #e5ad35;
+}
+
+.about-text {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 100px 8%;
+    text-align: center;
+    background: #f4dfb0;
+}
+
+.contact-box {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-box > p:first-child {
+    color: #a52b20;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.contact h2 {
+    font-size: clamp(40px, 6vw, 75px);
+    line-height: 0.95;
+    margin: 20px 0;
+}
+
+.contact h2 span {
+    color: #a52b20;
+}
+
+.contact-box p {
+    color: #66564f;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 8%;
+
+    background: #241510;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #999;
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        width: 85%;
+    }
+
+    .hero {
+        background-position: 65% center;
+    }
+
+    .hero-content {
+        padding-top: 70px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 220px;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-image {
+        height: 240px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+```
