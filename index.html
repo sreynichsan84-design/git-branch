@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-[#0b0c1b] text-white min-h-screen flex flex-col justify-between overflow-x-hidden relative">
+
+    <!-- Floating Navigation Bar -->
+    <header class="w-full flex justify-center pt-6 px-4 z-50">
+        <nav
+            class="bg-gradient-to-r from-pink-200 via-pink-100 to-pink-300 text-gray-800 rounded-full px-8 py-3 flex items-center justify-between w-full max-w-4xl shadow-lg">
+            <!-- Logo -->
+            <a href="#" class="font-extrabold text-xl text-pink-600 tracking-wider">SAN SREYNICH</a>
+
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-6 text-xs font-semibold uppercase tracking-wide text-gray-700">
+                <li><a href="#" class="text-pink-600 border-b-2 border-pink-600 pb-1">HOME</a></li>
+                <li><a href="./about.html" class="hover:text-pink-600 transition">ABOUT</a></li>
+                <li><a href="#" class="hover:text-pink-600 transition">Certificates</a></li>
+                <li><a href="#" class="hover:text-pink-600 transition">SKILLS</a></li>
+                <li><a href="#" class="hover:text-pink-600 transition">PROJECTS</a></li>
+                <li><a href="#" class="hover:text-pink-600 transition">CONTACT</a></li>
+            </ul>
+
+            <!-- Action Button -->
+            <a href="#"
+                class="bg-gradient-to-r from-pink-500 to-pink-600 text-white font-semibold text-xs px-6 py-2.5 rounded-full shadow-md hover:opacity-90 transition">
+                Hire Me
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main
+        class="max-w-6xl mx-auto px-6 pt-12 pb-20 flex-1 grid grid-cols-1 md:grid-cols-2 items-center gap-8 relative z-10">
+
+        <!-- Left Column: Content -->
+        <div class="space-y-6">
+            <h3 class="text-xs uppercase font-semibold text-gray-400 tracking-widest">
+                SAN SREYNICH OUALI
+            </h3>
+
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span>🌸</span> Hi, I'm NICH <span>🌸</span>
+            </h1>
+
+            <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 flex items-center">
+                I'm a Creator<span class="animate-pulse ml-1 text-white font-normal">|</span>
+            </h2>
+
+            <p class="text-gray-400 text-sm leading-relaxed max-w-md">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis at harum dolorem sit minus illo
+                nostrum? Tempore, nobis. Recusandae neque exercitationem voluptates tempore tempora sequi.
+            </p>
+
+            <!-- Action Buttons & Socials -->
+            <div class="flex items-center space-x-4 pt-4">
+                <!-- Download CV Button -->
+                <a href="#"
+                    class="bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium text-sm px-6 py-3 rounded-full flex items-center gap-2 shadow-lg hover:shadow-pink-500/30 transition">
+                    <i class="fa-solid fa-download text-xs"></i> Download CV
+                </a>
+
+                <!-- Social Icons -->
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-black/40 border border-gray-800 flex items-center justify-center text-white hover:bg-pink-600 transition">
+                    <i class="fa-brands fa-tiktok text-sm"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 flex items-center justify-center text-white hover:opacity-90 transition">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-sky-600 flex items-center justify-center text-white hover:bg-sky-500 transition">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column: Avatar/Image with Glow Effect -->
+        <div class="relative flex justify-center items-center">
+            <!-- Pink Glow Background -->
+            <div class="absolute w-72 h-72 sm:w-96 sm:h-96 bg-pink-600/40 rounded-full blur-3xl -z-10"></div>
+
+            <!-- Profile Image -->
+            <div
+                class="relative w-72 sm:w-80 md:w-96 rounded-b-full overflow-hidden filter drop-shadow-[0_0_25px_rgba(236,72,153,0.6)]">
+                <img src="./imge/1.png" alt="Laila - Creator"
+                    class="w-full h-auto object-cover">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bottom Tech Stack Banner -->
+    <footer
+        class="w-full bg-gradient-to-r from-purple-900/60 via-pink-900/80 to-purple-900/60 border-t border-pink-500/20 py-4 px-6">
+        <div
+            class="max-w-5xl mx-auto flex flex-wrap justify-around items-center gap-6 text-gray-300 text-xs sm:text-sm font-medium">
+
+            <!-- Tech Item 1 -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-brands fa-react text-sky-400 text-xl"></i>
+                <span>React JS</span>
+            </div>
+
+            <!-- Tech Item 2 -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-brands fa-vuejs text-emerald-400 text-xl"></i>
+                <span>Vue JS</span>
+            </div>
+
+            <!-- Tech Item 3 -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-code text-cyan-400 text-lg"></i>
+                <span>Tailwind CSS</span>
+            </div>
+
+            <!-- Tech Item 4 -->
+            <div class="flex items-center space-x-2">
+                <span class="bg-white text-black font-extrabold px-1.5 py-0.5 rounded-full text-xs">N</span>
+                <span>Next JS</span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+<section class="bg-[#0b0c1b] text-white min-h-screen py-16 px-6 sm:px-12 relative overflow-x-hidden">
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section class="max-w-6xl mx-auto mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative">
+
+            <!-- Left Column: Intro & Stats -->
+            <div class="space-y-6 lg:col-span-1 z-10">
+                <p class="text-xs uppercase font-medium tracking-widest text-pink-400">
+                    GET TO KNOW ME
+                </p>
+                <h2 class="text-3xl sm:text-4xl font-bold flex items-center gap-2">
+                    <span>🌸</span> About <span class="text-pink-500">Me</span> <span>🌸</span>
+                </h2>
+                <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                    I am a passionate developer with years of experience in creating beautiful and functional web
+                    applications. I love turning ideas into reality through code and design.
+                </p>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div>
+                        <p class="text-2xl font-bold text-white">3+</p>
+                        <p class="text-xs text-gray-400 mt-1">Years Experience</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">50+</p>
+                        <p class="text-xs text-gray-400 mt-1">Projects Completed</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">20+</p>
+                        <p class="text-xs text-gray-400 mt-1">Happy Clients</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">24/7</p>
+                        <p class="text-xs text-gray-400 mt-1">Dedicated Support</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Column: Glowing Fan Visual -->
+            <div class="lg:col-span-1 flex justify-center items-center my-8 lg:my-0 relative">
+                <!-- Pink Glowing Backdrop -->
+                <div class="absolute w-72 h-72 bg-pink-600/30 rounded-full blur-3xl -z-10"></div>
+
+                <!-- Fan Illustration Container -->
+                <div
+                    class="relative filter drop-shadow-[0_0_20px_rgba(236,72,153,0.7)] hover:scale-105 transition duration-300">
+                    <!-- Placeholder Cherry Blossom Fan SVG/Image -->
+                    <img src="./imge/download.png" alt="Japanese Folding Fan"
+                        class="w-80 sm:w-96 object-contain">
+                </div>
+            </div>
+
+            <!-- Right Column: Cards (Philosophy & Mission) -->
+            <div class="lg:col-span-1 space-y-6 z-10">
+                <!-- Philosophy Card -->
+                <div
+                    class="bg-[#12142b]/80 border border-gray-800/80 p-6 rounded-2xl backdrop-blur-sm hover:border-pink-500/40 transition">
+                    <h3 class="text-pink-400 font-semibold text-sm mb-2">My Philosophy</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Blending traditional inspiration with modern frontend technologies to create unique, high
+                        performance web experiences.
+                    </p>
+                </div>
+
+                <!-- Mission Card -->
+                <div
+                    class="bg-[#12142b]/80 border border-gray-800/80 p-6 rounded-2xl backdrop-blur-sm hover:border-pink-500/40 transition">
+                    <h3 class="text-pink-400 font-semibold text-sm mb-2">The Mission</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Transforming complex ideas into clean, pixel-perfect, and responsive interactive interfaces that
+                        captivate users.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CERTIFICATES SECTION ================= -->
+    <section class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold flex justify-center items-center gap-3">
+                <span>🌸</span> <span class="text-pink-400">Certificates</span> <span>🌸</span>
+            </h2>
+            <p class="text-gray-400 text-xs tracking-wider mt-2">
+                Professional achievements & certifications
+            </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <div
+                class="bg-[#12142b]/90 border border-gray-800 p-6 rounded-2xl flex flex-col justify-between hover:border-pink-500/50 transition group">
+                <div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-semibold text-sm text-white group-hover:text-pink-400 transition">
+                            Advanced React Development
+                        </h3>
+                        <span class="text-xs text-pink-400 font-semibold">2024</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6">Meta</p>
+
+                    <!-- Badges -->
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">React</span>
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">Hooks</span>
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">Context
+                            API</span>
+                    </div>
+                </div>
+
+                <a href="#" class="text-xs text-pink-400 flex items-center gap-1.5 hover:underline font-medium">
+                    <i class="fa-solid fa-eye text-[10px]"></i> View Certificate
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="bg-[#12142b]/90 border border-gray-800 p-6 rounded-2xl flex flex-col justify-between hover:border-pink-500/50 transition group">
+                <div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-semibold text-sm text-white group-hover:text-pink-400 transition">
+                            Full Stack JavaScript
+                        </h3>
+                        <span class="text-xs text-pink-400 font-semibold">2023</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6">IBM</p>
+
+                    <!-- Badges -->
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">Node.js</span>
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">Express</span>
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">MongoDB</span>
+                    </div>
+                </div>
+
+                <a href="#" class="text-xs text-pink-400 flex items-center gap-1.5 hover:underline font-medium">
+                    <i class="fa-solid fa-eye text-[10px]"></i> View Certificate
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="bg-[#12142b]/90 border border-gray-800 p-6 rounded-2xl flex flex-col justify-between hover:border-pink-500/50 transition group">
+                <div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-semibold text-sm text-white group-hover:text-pink-400 transition">
+                            UI/UX Design
+                        </h3>
+                        <span class="text-xs text-pink-400 font-semibold">2024</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6">Google</p>
+
+                    <!-- Badges -->
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">Figma</span>
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">User
+                            Research</span>
+                        <span
+                            class="bg-pink-950/60 border border-pink-500/30 text-pink-300 text-[10px] px-2.5 py-1 rounded-full">Prototyping</span>
+                    </div>
+                </div>
+
+                <a href="#" class="text-xs text-pink-400 flex items-center gap-1.5 hover:underline font-medium">
+                    <i class="fa-solid fa-eye text-[10px]"></i> View Certificate
+                </a>
+            </div>
+
+        </div>
+    </section>
+</section>
+<section
+    class="bg-[#0b0c1b] text-white min-h-screen py-16 px-6 sm:px-12 flex items-center justify-center relative overflow-x-hidden">
+
+    <!-- ================= EDUCATION SECTION ================= -->
+    <section class="max-w-5xl w-full mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+            <!-- Left Column: Glowing Cherry Blossom Branch -->
+            <div class="lg:col-span-5 flex justify-center items-center relative">
+                <!-- Pink Glowing Background Circle -->
+                <div class="absolute w-64 h-64 sm:w-80 sm:h-80 bg-pink-600/30 rounded-full blur-3xl -z-10"></div>
+
+                <!-- Sakura Branch Image -->
+                <div class="relative filter drop-shadow-[0_0_20px_rgba(236,72,153,0.5)]">
+                    <img src="./imge/FLOWER.png"
+                        alt="Cherry Blossom Branch" class="w-64 sm:w-80 object-contain">
+                </div>
+            </div>
+
+            <!-- Right Column: Content & Education Cards -->
+            <div class="lg:col-span-7 space-y-5">
+
+                <!-- Section Title & Subtitle -->
+                <div class="mb-6">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pink-400 flex items-center gap-2">
+                        <span>🌸</span> Education <span>🌸</span>
+                    </h2>
+                    <p class="text-gray-400 text-xs sm:text-sm tracking-wider mt-2">
+                        My academic journey
+                    </p>
+                </div>
+
+                <!-- Education Card 1 -->
+                <div
+                    class="bg-[#12142b]/90 border border-gray-800/80 p-5 rounded-2xl shadow-lg hover:border-pink-500/40 transition group">
+                    <h3 class="font-bold text-base sm:text-lg text-white group-hover:text-pink-400 transition">
+                        Master's in Computer Science
+                    </h3>
+                    <p class="text-xs text-pink-400 mt-1 font-medium">
+                        University of Technology
+                    </p>
+                    <div class="flex items-center space-x-6 text-xs text-gray-400 mt-3">
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-regular fa-calendar text-[11px] text-pink-400"></i>
+                            2021 - 2023
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-ribbon text-[11px] text-pink-400"></i>
+                            4.0 GPA
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Education Card 2 -->
+                <div
+                    class="bg-[#12142b]/90 border border-gray-800/80 p-5 rounded-2xl shadow-lg hover:border-pink-500/40 transition group">
+                    <h3 class="font-bold text-base sm:text-lg text-white group-hover:text-pink-400 transition">
+                        Bachelor's in Software Engineering
+                    </h3>
+                    <p class="text-xs text-pink-400 mt-1 font-medium">
+                        Institute of Technology
+                    </p>
+                    <div class="flex items-center space-x-6 text-xs text-gray-400 mt-3">
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-regular fa-calendar text-[11px] text-pink-400"></i>
+                            2017 - 2021
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-ribbon text-[11px] text-pink-400"></i>
+                            3.8 GPA
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Education Card 3 -->
+                <div
+                    class="bg-[#12142b]/90 border border-gray-800/80 p-5 rounded-2xl shadow-lg hover:border-pink-500/40 transition group">
+                    <h3 class="font-bold text-base sm:text-lg text-white group-hover:text-pink-400 transition">
+                        Web Development Bootcamp
+                    </h3>
+                    <p class="text-xs text-pink-400 mt-1 font-medium">
+                        Coding Academy
+                    </p>
+                    <div class="flex items-center space-x-6 text-xs text-gray-400 mt-3">
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-regular fa-calendar text-[11px] text-pink-400"></i>
+                            2023
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-ribbon text-[11px] text-pink-400"></i>
+                            Excellence
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</section>
+
+</html>
